@@ -1,5 +1,7 @@
 package com.example.kotlin.basics
 
+
+const val NAME = "String" // Compile time constant
 fun main(){
     //mutable variables
     var a = 10
