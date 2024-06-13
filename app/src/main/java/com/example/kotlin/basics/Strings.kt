@@ -29,6 +29,11 @@ fun main(){
     println("malayalam".substringAfter("a"))
     println("malayalam".substringAfter("z",  "Not Found"))
 
+    println("malayalam".drop(4))
+    println("malayalam".dropLast(4))
+    println("malayalam".dropWhile { it != 'a' })
+    println("malayalam".dropLastWhile { it != 'l' })
+
     // String templates
     val name = "TestDev"
     println("My test name is $name")
