@@ -34,6 +34,13 @@ fun main(){
     println("malayalam".dropWhile { it != 'a' })
     println("malayalam".dropLastWhile { it != 'l' })
 
+    println("malayalam".codePointAt(1))
+    val byteArray = "malayalam".encodeToByteArray()
+    println(byteArray)
+    println(byteArray.decodeToString())
+
+    println("malayalam".endsWith("am"))
+
     // String templates
     val name = "TestDev"
     println("My test name is $name")
