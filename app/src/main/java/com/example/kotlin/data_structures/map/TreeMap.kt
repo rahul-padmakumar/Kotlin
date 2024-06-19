@@ -2,6 +2,10 @@ package com.example.kotlin.data_structures.map
 
 import java.util.TreeMap
 
+/**
+ * Kotlin does not have implementation of TreeMap as it has map.toSortedMap()
+ */
+
 fun main(){
 
     val map = TreeMap<Int, String>()
