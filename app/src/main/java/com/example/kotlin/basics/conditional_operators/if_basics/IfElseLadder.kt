@@ -1,4 +1,4 @@
-package com.example.kotlin.basics.conditional_operators
+package com.example.kotlin.basics.conditional_operators.if_basics
 
 fun main(){
     println("Enter the mark")
