@@ -72,6 +72,10 @@ fun main(){
     list.shuffle()
     println(list)
 
+    list.sort()
+    println(list)
+    println(list.binarySearch(25))
+
     list.clear()
     println(list.isEmpty())
 }

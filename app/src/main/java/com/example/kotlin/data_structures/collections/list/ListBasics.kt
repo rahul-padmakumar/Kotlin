@@ -27,7 +27,7 @@ fun main(){
     println(list.getOrElse(3) { -1 })
     println(list.getOrElse(45){ -1})
 
-    //get index
+    //get index uses linear search
     println(list.indexOf(5))
     println(list.lastIndexOf(5))
 
