@@ -4,7 +4,7 @@ package com.example.kotlin.basics.loop.do_while_loop
 
 fun main(){
 
-    var input: String? = null
+    var input: String?
     do{
         println("Enter a word")
         input = readlnOrNull()
