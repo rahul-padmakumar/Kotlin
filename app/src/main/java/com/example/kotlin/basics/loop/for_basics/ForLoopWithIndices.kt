@@ -1,4 +1,4 @@
-package com.example.kotlin.basics.loop
+package com.example.kotlin.basics.loop.for_basics
 
 fun main(){
     val list = listOf(1, 2, 3, 4, 5)

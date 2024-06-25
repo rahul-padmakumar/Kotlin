@@ -1,4 +1,4 @@
-package com.example.kotlin.basics.loop
+package com.example.kotlin.basics.loop.for_basics
 
 fun main(){
 
