@@ -6,7 +6,7 @@ fun main(){
     println("Value of y in main is $y")
 }
 
-fun printValue(){
+private fun printValue(){
     val y = 10
     println("Value of y in printValue is $y")
 }
