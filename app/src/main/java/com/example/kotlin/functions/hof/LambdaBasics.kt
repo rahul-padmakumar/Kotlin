@@ -1,7 +1,5 @@
 package com.example.kotlin.functions.hof
 
-import kotlinx.coroutines.flow.merge
-
 fun main(){
     /**
      * {a: Int, b: Int -> a + b}
