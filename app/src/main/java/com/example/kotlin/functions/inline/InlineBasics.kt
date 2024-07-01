@@ -28,10 +28,10 @@ fun main(){
     println("main end")
 }
 
-fun foo(block: () -> Unit){
+private fun foo(block: () -> Unit){
     block()
 }
 
-inline fun fooInline(block: () -> Unit){
+private inline fun fooInline(block: () -> Unit){
     block()
 }
