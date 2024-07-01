@@ -23,7 +23,7 @@ fun main(){
  *
  *  from above decompiled code first argument is called as inline while second argument is called as a normal function
  */
-fun takeClass2() {
+private fun takeClass2() {
     println("Start class")
     teachNoInline(
         { println("history") },
@@ -49,7 +49,7 @@ fun takeClass2() {
  *    }
  *    Both parameters are inlined
  */
-fun takeClass(){
+private fun takeClass(){
     println("Start class")
     teach(
         { println("history") },
@@ -58,11 +58,11 @@ fun takeClass(){
     println("End class")
 }
 
-inline fun teach(subj1: () -> Unit, subj2: () -> Unit){
+private inline fun teach(subj1: () -> Unit, subj2: () -> Unit){
     subj1()
     subj2()
 }
-inline fun teachNoInline(subj1: () -> Unit, noinline subj2: () -> Unit){
+private inline fun teachNoInline(subj1: () -> Unit, noinline subj2: () -> Unit){
     subj1()
     subj2()
 }
