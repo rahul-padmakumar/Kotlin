@@ -12,6 +12,14 @@ fun main(){
             i + i2
         }
     }
+    // Standard hofs like apply are marked as inline since we can use return with the lambda
+    1.apply{
+        return
+    }
+    // Without inline we will not be able to use return inside apply block
+    /*1.apply1{
+        return
+    }*/
 }
 
 private fun operation(block: (Int, Int) -> Int){
@@ -20,4 +28,9 @@ private fun operation(block: (Int, Int) -> Int){
 
 private inline fun operationInline(block: (Int, Int) -> Int){
     println(block(7, 7))
+}
+
+private fun <T> T.apply1(block: T.() -> Unit): T{
+    block()
+    return this
 }
