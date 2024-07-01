@@ -1,5 +1,7 @@
 package com.example.kotlin.functions.inline
 
+import kotlin.system.measureTimeMillis
+
 /**
  * Decoded byte code
  * public static final void main() {
@@ -19,12 +21,22 @@ package com.example.kotlin.functions.inline
 
 fun main(){
     println("main start")
-    foo{
-        println("foo block")
+    val times = measureTimeMillis {
+        repeat(1_000) {
+            foo {
+                print("foo block")
+            }
+        }
     }
-    fooInline {
-        println("foo inline block")
+    println("time taken is $times")
+    val times2 = measureTimeMillis {
+        repeat(1_000) {
+            fooInline {
+                print("foo inline block")
+            }
+        }
     }
+    println("time taken is $times2")
     println("main end")
 }
 
