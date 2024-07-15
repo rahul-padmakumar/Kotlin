@@ -14,6 +14,7 @@ fun main(){
     println(cublicle.breadth)
     println(cublicle.area)
 }
+@Suppress("RedundantGetter", "RedundantSetter")
 private class Cublicle{
     var length: Int = 0
     var height: Int = 0
