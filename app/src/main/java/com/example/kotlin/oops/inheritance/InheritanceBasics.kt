@@ -1,4 +1,4 @@
-package com.example.kotlin.classes_basics
+package com.example.kotlin.oops.inheritance
 
 private open class CalculatorBase{
     fun add(num1: Int, num2: Int) = num1 + num2
