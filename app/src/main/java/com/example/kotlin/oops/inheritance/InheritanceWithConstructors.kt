@@ -22,7 +22,7 @@ fun main(){
 
 open class InheritanceWithConstructorsBase(val value: Int)
 
-class InheritanceWithConstructorsA(private val valueA: Int): InheritanceWithConstructorsBase(valueA){
+class InheritanceWithConstructorsA(valueA: Int): InheritanceWithConstructorsBase(valueA){
 
     var message: String = ""
         private set
