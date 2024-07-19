@@ -1,7 +1,5 @@
 package com.example.kotlin.functions.standard_functions
 
-import android.support.v4.os.ResultReceiver
-
 fun main(){
     val person = Person()
     with(person){
