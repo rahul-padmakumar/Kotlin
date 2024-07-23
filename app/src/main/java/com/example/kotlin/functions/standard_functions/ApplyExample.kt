@@ -10,7 +10,7 @@ fun main(){
         city = "Nashville"
     }
     person.printData()
-    person = ApplyPerson().apply {
+    person = ApplyPerson().applyExample {
         name = "Tester1"
         age = 27
         city = "North Pole"
@@ -28,4 +28,7 @@ private class ApplyPerson{
     }
 }
 
-private inline fun <T> T.applyExample(block: T.() -> T): T = block()
+private inline fun <T> T.applyExample(block: T.() -> Unit): T{
+    block()
+    return this
+}
