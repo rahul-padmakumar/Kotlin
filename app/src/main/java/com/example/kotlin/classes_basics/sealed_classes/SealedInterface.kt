@@ -2,6 +2,7 @@ package com.example.kotlin.classes_basics.sealed_classes
 
 sealed interface IQuadrilateral
 
+@Suppress("UNUSED_PARAMETER")
 class Square(length: Int): IQuadrilateral
 
 data class Rectangle(val length: Int, val breadth: Int): IQuadrilateral
