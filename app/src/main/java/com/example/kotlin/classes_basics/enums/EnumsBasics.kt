@@ -1,7 +1,5 @@
 package com.example.kotlin.classes_basics.enums
 
-import kotlin.enums.EnumEntries
-
 /**
  * Oridinal enum - position represents the value
  *  Here each enum is an object
