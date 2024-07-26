@@ -4,7 +4,9 @@ sealed class ErrorConstructor(val message: String){
     class NetworkError: Error("Network Failure")
     class DataBaseError: Error("Database Failure")
 
-    object UnknownError: Error("Unknown Error Occurred")
+    object UnknownError: Error("Unknown Error Occurred") {
+        private fun readResolve(): Any = UnknownError
+    }
 }
 
 fun main(){
