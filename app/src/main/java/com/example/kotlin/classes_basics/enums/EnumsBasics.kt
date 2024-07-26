@@ -6,7 +6,7 @@ import kotlin.enums.EnumEntries
  * Oridinal enum - position represents the value
  *  Here each enum is an object
  */
-enum class CardType{
+private enum class CardType{
     SILVER,
     GOLD,
     PLATINUM
