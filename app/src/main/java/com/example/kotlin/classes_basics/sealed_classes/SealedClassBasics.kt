@@ -1,6 +1,7 @@
 package com.example.kotlin.classes_basics.sealed_classes
 
 private sealed class Shape{
+    @Suppress("UNUSED_PARAMETER")
     class Circle(radius: Int): Shape()
 
     data class Triangle(val base: Int, val height: Int, val angle: Int): Shape()
