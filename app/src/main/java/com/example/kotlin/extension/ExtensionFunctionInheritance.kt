@@ -1,5 +1,13 @@
 package com.example.kotlin.extension
 
+/**
+ * Dispatch receiver can be dynamic
+ * Extension receiver are static
+ *
+ * Visibility:
+ * Extension function defined as top level can access private functions and variables defined in the same file
+ * Extension function defined in separate file cannot access private and protected variables and functions in the receiver
+ */
 open class ExtInheritanceBase
 class ExtInheritanceDerived: ExtInheritanceBase()
 

@@ -1,9 +1,11 @@
 package com.example.kotlin.extension
 
+// Extension receiver
 class Host(private val hostName: String){
     fun printHostName() = print("Host name: $hostName")
 }
 
+// Dispatch Receiver
 class Connection(private val host: Host, private val port: Int){
 
     private fun printPort() = println("Port number: $port")
