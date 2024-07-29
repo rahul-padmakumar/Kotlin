@@ -1,5 +1,10 @@
 package com.example.kotlin.extension
 
+/**
+ * Extension property cannot have backing field -
+ * So it cannot be initialized
+ */
+
 val <T> List<T>.lastElement: T
     get() = this[size - 1]
 
