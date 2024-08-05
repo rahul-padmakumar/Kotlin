@@ -13,7 +13,15 @@ value class InlineInheritanceName(private val s: String): Printable{
     override fun prettyPrint(): String = "Hello, $s"
 }
 
+@JvmInline
+value class InlineClassDelegation(private val printable: Printable): Printable by printable
+
 fun main(){
-    val name = InlineInheritanceName("Kotlin")
-    println(name.prettyPrint())
+    val eg1 = InlineInheritanceName("Kotlin")
+    println(eg1.prettyPrint())
+
+    val eg2 = InlineClassDelegation(object : Printable{
+        override fun prettyPrint(): String = "Hello delegate"
+    })
+    println(eg2.prettyPrint())
 }
