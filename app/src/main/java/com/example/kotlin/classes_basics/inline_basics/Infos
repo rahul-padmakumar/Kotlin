@@ -1,0 +1,23 @@
+Representation:
+
+Kotlin compiler represents inline classes using their underlying type.
+It uses the wrapper when inline class is represented as other type for eg: as nullable, generic, as an interface which inline class implements etc
+
+Mangling - Since inline classes are compiled to its underlying type it can lead to unexpected errors
+for eg:
+@JvmInline
+value class Password(val value: String)
+
+fun checkValid(data: String)
+
+fun checkValid(data: Password)
+
+it will generate compile time error since in the compiled code both this function have same argument
+so  functions using inline classes are modified by a hashcode to solve the above issue by Kotlin Compiler
+
+to manually disable mangling use @JvmName("name") annotation so that we can call function using inline classes
+from Java also
+
+Inline classes vs type alias - Type alias just introduce alternate name are assignment compatible while inline classes introduce new type
+
+
