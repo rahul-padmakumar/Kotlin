@@ -1,7 +1,5 @@
 package com.example.kotlin.classes_basics.objects_basics
 
-import com.example.kotlin.classes_basics.inline_basics.Printable
-
 interface ExpressionOperation<T>{
     fun execute(a: T, b: T): T
 }
