@@ -36,5 +36,9 @@ fun main(){
             println("Launched in Custom coroutine scope")
         }
         delay(3000L)
+        CoroutineScope(this.coroutineContext).launch {
+            delay(2000L)
+            println("Launched in Custom coroutine scope")
+        }
     }
 }
