@@ -1,0 +1,5 @@
+
+How delay works?
+
+Handler Context implements Delay interface and runs the delay using Handler.postDelayed function.
+
