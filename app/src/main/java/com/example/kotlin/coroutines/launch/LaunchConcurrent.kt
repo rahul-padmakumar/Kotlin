@@ -5,6 +5,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
+/**
+ * Launch will not return result from coroutine. Its behaviour is fire and forget
+ */
+
 fun main(){
     runBlocking {
         val startTime = System.currentTimeMillis()
