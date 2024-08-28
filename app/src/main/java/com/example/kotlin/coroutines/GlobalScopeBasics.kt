@@ -1,11 +1,10 @@
 package com.example.kotlin.coroutines
 
-import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import java.lang.RuntimeException
 
 /**
  * Global scope lifetime is entire lifetime of application
@@ -15,6 +14,7 @@ import java.lang.RuntimeException
  * Global scope and children coroutines launched in GlobalScope cannot be cancelled
  */
 
+@OptIn(DelicateCoroutinesApi::class)
 fun main(){
 
     val job = GlobalScope.launch {
