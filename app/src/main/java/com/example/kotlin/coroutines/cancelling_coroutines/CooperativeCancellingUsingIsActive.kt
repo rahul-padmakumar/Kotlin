@@ -1,5 +1,6 @@
 package com.example.kotlin.coroutines.cancelling_coroutines
 
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
@@ -15,6 +16,8 @@ fun main(){
                 if(isActive) {
                     Thread.sleep(it * 1000L)
                     println("Coroutine - $it")
+                } else {
+                    throw CancellationException()
                 }
             }
         }
