@@ -26,5 +26,6 @@ fun main(){
     runBlocking {
         println(flow.first())
         println(flow2.firstOrNull())
+        println(flow.first { it > 1})
     }
 }
