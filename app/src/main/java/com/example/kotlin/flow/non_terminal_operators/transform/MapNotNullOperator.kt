@@ -1,17 +1,16 @@
-package com.example.kotlin.flow.non_terminal_operators
+package com.example.kotlin.flow.non_terminal_operators.transform
 
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.flow.mapNotNull
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.runBlocking
 
 fun main(){
-    println("Programme start")
     runBlocking {
-        flowOf(1, 2, 3, 4, 5, 6)
-            .map {
-                it * it
+        flowOf(1, 2, 3, 4, 5, null)
+            .mapNotNull {
+                it?.times(it)
             }.onEach {
                 println(it)
             }.launchIn(this)
