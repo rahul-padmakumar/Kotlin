@@ -1,4 +1,4 @@
-package com.example.kotlin.flow.terminal_operator
+package com.example.kotlin.flow
 
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.delay
