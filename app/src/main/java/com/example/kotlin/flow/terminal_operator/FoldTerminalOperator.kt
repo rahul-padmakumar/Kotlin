@@ -3,7 +3,6 @@ package com.example.kotlin.flow.terminal_operator
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.fold
-import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.runBlocking
 
 fun main(){
