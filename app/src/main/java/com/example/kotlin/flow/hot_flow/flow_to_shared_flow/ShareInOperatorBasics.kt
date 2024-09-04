@@ -12,7 +12,7 @@ fun main(){
 
     val coldFlow = flow {
         repeat(100){
-            kotlinx.coroutines.delay(100)
+            delay(100)
             println("Emit $it")
             emit(it)
         }
