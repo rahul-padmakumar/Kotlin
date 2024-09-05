@@ -1,0 +1,10 @@
+Shared Flow
+Initial Value - No
+Replay Cache Customizable - Yes
+Emission of subsequent equal values: yes
+
+**********************************************************************
+State Flow
+Initial Value - Yes
+Replay Cache Customizable - No, Always be 1
+Emission of subsequent equal values: No
