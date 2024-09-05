@@ -8,6 +8,10 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.launch
 
+/**
+ * WhileSubscribed causes flow to start from scratch if a new collector comes after flow stops.
+ * It will not occur with Eagerly and lazily since the flow collection of cold flow is not getting cancelled
+ */
 fun main(){
 
     val coldFlow = flow {
