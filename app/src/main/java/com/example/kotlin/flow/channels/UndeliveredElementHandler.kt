@@ -7,6 +7,10 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
+/**
+ * Useful when handling expensive resources. So when some error handles we can close the emitted resource.
+ */
+
 fun main(){
     runBlocking {
         val channel = Channel<Int>(onBufferOverflow = BufferOverflow.DROP_OLDEST){
