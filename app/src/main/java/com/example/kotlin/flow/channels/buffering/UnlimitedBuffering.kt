@@ -13,7 +13,7 @@ fun main(){
     runBlocking {
         val channel = produce(capacity = Channel.UNLIMITED){
             repeat(10){
-                kotlinx.coroutines.delay(100)
+                delay(100)
                 println("Emit $it")
                 send(it)
             }
