@@ -1,7 +1,7 @@
 package com.example.kotlin.functions.hof.function_types
 
 fun main(){
-    val a = ::UserDetails
+    val a:(String, String) -> UserDetails = ::UserDetails
     println(a.invoke("rahul", "123456").printUserDetails())
 }
 
