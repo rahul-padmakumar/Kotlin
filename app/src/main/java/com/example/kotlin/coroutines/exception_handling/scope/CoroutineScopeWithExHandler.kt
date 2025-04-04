@@ -12,14 +12,10 @@ fun main(){
     }
     val scope = CoroutineScope(Job())
     scope.launch {
-        try {
-            coroutineScope{
-                launch(exHandler){
-                    throw RuntimeException("Testing")
-                }
+        coroutineScope{
+            launch(exHandler){
+                throw RuntimeException("Testing")
             }
-        } catch (e: Exception){
-            println("Exception: ${e.message}")
         }
     }
     Thread.sleep(1000)
